@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #e0f7fa, #f1f8e9);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.App {
+  text-align: center;
+  padding: 40px;
+}
+
+h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  max-width: 600px;
+  margin: auto;
+}
+
+li {
+  background-color: #ffffff;
+  margin: 10px 0;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+li:hover {
+  background-color: #b3e5fc;
+  transform: scale(1.02);
+}
+
+.selected {
+  background-color: #81d4fa;
+  color: #004d40;
+  font-weight: bold;
+}
+
+.button {
+  background-color: #00c853;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.3s ease;
+  animation: pulse 1s infinite alternate;
+}
+
+.button:hover {
+  background-color: #00b248;
+  transform: scale(1.05);
+}
+
+.button-disable {
+  background-color: #cfd8dc;
+  color: #757575;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: not-allowed;
+}
+
+.score-container {
+  margin-top: 50px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.score-text {
+  font-size: 28px;
+  color: #00796b;
+  font-weight: bold;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.03);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
